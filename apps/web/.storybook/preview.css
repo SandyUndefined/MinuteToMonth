@@ -1,0 +1,10 @@
+:root {
+  /* Provide font var fallbacks so Storybook can resolve font stacks. */
+  --font-inter: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-sora: Sora, ui-sans-serif, system-ui, sans-serif;
+}
+
+html, body, #storybook-root {
+  height: 100%;
+}
+
