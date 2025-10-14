@@ -1,0 +1,26 @@
+{
+  "name": "Minute To Month",
+  "tagline": "30 days of content in 10 minutes.",
+  "tone": ["clear", "energetic", "encouraging"],
+  "bannedWords": ["hack", "guaranteed growth"],
+  "ctaBank": ["Generate my month", "Schedule smarter", "Watch the 90-sec demo" , "Get Started" , "Try it free", "Start my free trial", "Subscribe now", "Join the waitlist" , "See it in action" , "Learn more" , "Get early access" , "Sign up free" , "Book a demo"],
+  "colors": {
+    "primary": "#6C5CE7",
+    "primaryHover": "#5A4DD4",
+    "secondary": "#00C2A8",
+    "accent": "#FFB020",
+    "ink": "#E6E8EC",
+    "inkMuted": "#A7B0C0",
+    "bg": "#0E1424",
+    "panel": "#0B1220",
+    "stroke": "#23324A"
+  },
+  "typography": {
+    "headline": "Sora",
+    "body": "Inter",
+    "scale": ["3.0rem","2.25rem","1.875rem","1.5rem","1.25rem","1.125rem","1rem","0.875rem"]
+  },
+  "icons": "lucide",
+  "locales": ["en", "hi"],
+  "pillars": ["Tutorials", "Behind the Scenes", "Product Tips"]
+}

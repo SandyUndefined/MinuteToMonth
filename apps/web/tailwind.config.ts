@@ -18,12 +18,59 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        // Headline and body mappings from brand tokens
+        headline: ["var(--font-sora)", "ui-sans-serif", "system-ui", "sans-serif"],
+        body: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+        // Default sans falls back to body
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      fontSize: {
+        display: [
+          "3rem",
+          { lineHeight: "1.1", fontWeight: "700", letterSpacing: "-0.01em" },
+        ],
+        title: [
+          "2.25rem",
+          { lineHeight: "1.2", fontWeight: "700", letterSpacing: "-0.01em" },
+        ],
+        h1: [
+          "1.875rem",
+          { lineHeight: "1.3", fontWeight: "700" },
+        ],
+        h2: [
+          "1.5rem",
+          { lineHeight: "1.35", fontWeight: "700" },
+        ],
+        h3: [
+          "1.25rem",
+          { lineHeight: "1.4", fontWeight: "600" },
+        ],
+        h4: [
+          "1.125rem",
+          { lineHeight: "1.5", fontWeight: "600" },
+        ],
+        body: [
+          "1rem",
+          { lineHeight: "1.6" },
+        ],
+        small: [
+          "0.875rem",
+          { lineHeight: "1.6" },
+        ],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        // Brand-specific aliases
+        ink: "hsl(var(--ink))",
+        "ink-muted": "hsl(var(--ink-muted))",
+        panel: "hsl(var(--panel))",
+        stroke: "hsl(var(--stroke))",
+        "primary-hover": "hsl(var(--primary-hover))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

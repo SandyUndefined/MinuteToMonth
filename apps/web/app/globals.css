@@ -4,65 +4,80 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    /* Light theme (brand-aligned) */
+    --background: 0 0% 100%; /* white */
+    --foreground: 220 49% 8%; /* brand panel as dark text */
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 220 49% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 220 49% 8%;
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 247 74% 63%; /* #6C5CE7 */
+    --primary-hover: 246 61% 57%; /* #5A4DD4 */
+    --primary-foreground: 0 0% 100%; /* white */
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 172 100% 38%; /* #00C2A8 */
+    --secondary-foreground: 0 0% 100%; /* white */
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 220 14% 91%; /* ink as light muted bg/border */
+    --muted-foreground: 218 17% 70%; /* inkMuted */
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 39 100% 56%; /* #FFB020 */
+    --accent-foreground: 220 49% 8%; /* dark text on accent */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%; /* generic red */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
+    --border: 220 14% 91%; /* ink */
+    --input: 220 14% 91%;
+    --ring: 247 74% 63%; /* primary */
+
+    /* Additional brand surface tokens */
+    --ink: 220 14% 91%;
+    --ink-muted: 218 17% 70%;
+    --panel: 220 49% 8%;
+    --stroke: 217 36% 21%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Dark theme (brand tokens) */
+    --background: 224 44% 10%; /* bg */
+    --foreground: 220 14% 91%; /* ink */
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 220 49% 8%; /* panel */
+    --card-foreground: 220 14% 91%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 49% 8%;
+    --popover-foreground: 220 14% 91%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 247 74% 63%;
+    --primary-hover: 246 61% 57%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 172 100% 38%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 217 36% 21%; /* stroke as muted surface */
+    --muted-foreground: 218 17% 70%; /* inkMuted */
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 39 100% 56%;
+    --accent-foreground: 220 49% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 217 36% 21%; /* stroke */
+    --input: 217 36% 21%;
+    --ring: 247 74% 63%;
+
+    --ink: 220 14% 91%;
+    --ink-muted: 218 17% 70%;
+    --panel: 220 49% 8%;
+    --stroke: 217 36% 21%;
   }
 
   * {
