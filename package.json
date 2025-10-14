@@ -6,6 +6,18 @@
     "dev": "pnpm -C apps/web dev",
     "build": "pnpm -C apps/web build",
     "start": "pnpm -C apps/web start",
-    "lint": "pnpm -C apps/web lint"
+    "lint": "pnpm -C apps/web lint",
+    "typecheck": "pnpm -C apps/web typecheck",
+    "format": "prettier . -w",
+    "format:check": "prettier . -c",
+    "prepare": "husky"
+  }
+  ,
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.3.3"
   }
 }
