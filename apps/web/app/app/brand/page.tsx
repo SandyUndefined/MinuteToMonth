@@ -1,9 +1,5 @@
 import Link from "next/link";
-
-const SAMPLE_BRANDS = [
-  { id: "minute-to-month", name: "Minute To Month" },
-  { id: "acme-co", name: "Acme Co" },
-];
+import { BRANDS } from "@/lib/brands";
 
 export default function BrandsIndexPage() {
   return (
@@ -13,7 +9,7 @@ export default function BrandsIndexPage() {
         <p className="text-muted-foreground">Pick a brand to manage.</p>
       </div>
       <ul className="grid gap-3 sm:grid-cols-2">
-        {SAMPLE_BRANDS.map((b) => (
+        {BRANDS.map((b) => (
           <li key={b.id}>
             <Link
               href={`/app/brand/${b.id}`}
@@ -28,4 +24,3 @@ export default function BrandsIndexPage() {
     </section>
   );
 }
-
